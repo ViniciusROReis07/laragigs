@@ -1,3 +1,6 @@
+@extends('layout')
+
+@section('content')
 <h1>{{$heading}}</h1>
 
 {{-- @php
@@ -23,3 +26,4 @@
 @endunless
     
 
+@endsection
