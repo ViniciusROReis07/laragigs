@@ -1,0 +1,17 @@
+Para criar migrations
+Ex: php artisan make:migration create_listings_table
+
+Para executar migrations:
+php artisan migrate
+
+Para executar seed:
+php artisan db:seed
+
+Para atualizar as tabelas:
+php artisan migrate:refresh
+
+Para criar model pelo cli:
+ex: php artisan make:model Listing
+
+Para criar um novo arquivo de fábrica, para gerar dados de teste
+ex:hp artisan make:factory ListingFactory
