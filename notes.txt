@@ -15,3 +15,16 @@ ex: php artisan make:model Listing
 
 Para criar um novo arquivo de fábrica, para gerar dados de teste
 ex:hp artisan make:factory ListingFactory
+
+Para criar uma controller:
+Ex: php artisan make:controller ListingController
+
+Convesao de nomecladuras para funcoes de Controllers
+
+index - Show all listing
+show - Show single listing
+create - show form new listing
+store - Store new listing
+edit - Show form to edit listing
+update - Update listing
+destroy - Delete listing
