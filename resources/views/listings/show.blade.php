@@ -1,6 +1,4 @@
-@extends('layout')
-
-@section('content')
+<x-layout>
 @include('partials._search')
 
 @unless ($listing == [])
@@ -43,5 +41,5 @@
     @else
     <p>No listing found</p>
 @endunless
-@endsection
+</x-layout>
 
