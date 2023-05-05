@@ -19,7 +19,7 @@ ex:hp artisan make:factory ListingFactory
 Para criar uma controller:
 Ex: php artisan make:controller ListingController
 
-Convesao de nomecladuras para funcoes de Controllers
+Convesao de nomeclaturas para funcoes de Controllers
 
 index - Show all listing
 show - Show single listing
@@ -28,3 +28,16 @@ store - Store new listing
 edit - Show form to edit listing
 update - Update listing
 destroy - Delete listing
+
+Visualizar dados das requisicoes:
+clockwork -> instalar no chrome e com composer, mostra tempo de respota e querys
+
+Cadastro:
+Precisa atribuir os campos que aceitam valores em massa.
+
+A atribuição em massa é uma funcionalidade no Laravel que permite definir vários atributos de um modelo de uma só vez, passando um array de pares chave-valor. No entanto, por motivos de segurança, o Laravel exige que você especifique explicitamente quais campos podem ser atribuídos em massa. Isso é feito definindo uma propriedade $fillable no modelo que lista os nomes dos campos que podem ser atribuídos em massa.
+Para corrigir essa mensagem de erro, você deve abrir o arquivo do modelo Listing e adicionar title à propriedade $fillable desta forma:
+
+Ex:
+protected $fillable = ['title', ...outros campos...];
+
