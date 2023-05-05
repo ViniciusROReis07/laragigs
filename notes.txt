@@ -41,3 +41,12 @@ Para corrigir essa mensagem de erro, você deve abrir o arquivo do modelo Listin
 Ex:
 protected $fillable = ['title', ...outros campos...];
 
+Outra maneira de resolver e adicionando :
+
+public function boot(): void
+{
+    Model::unguard();
+}
+
+no AppServiceProvider
+
