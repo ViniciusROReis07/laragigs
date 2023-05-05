@@ -56,3 +56,8 @@ Para personalizar listagem:
 1 - php artisan vendor:publish (é uma ferramenta útil para personalizar pacotes de fornecedores em seus aplicativos Laravel, permitindo que você faça alterações em arquivos de configuração, visão e linguagem para atender às necessidades específicas do seu aplicativo.)
 2 - em AppServiceProvider -> boot adicionar Paginator::useBootstrapFive(); (5 foi a opcao que eu escolhi em php artisan vendor:publish)
 
+Upload de imagem:
+
+1 - Em config->filesystem podemos definir aonde o arquivo sera salvo4
+2 - Os arquivos locais e publicos sao salvos na pasta storage
+3 - O comando php artisan storage:link linka os arquivos da pasta storage com a pasta public
