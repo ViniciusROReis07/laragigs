@@ -50,3 +50,9 @@ public function boot(): void
 
 no AppServiceProvider
 
+
+Para personalizar listagem:
+
+1 - php artisan vendor:publish (é uma ferramenta útil para personalizar pacotes de fornecedores em seus aplicativos Laravel, permitindo que você faça alterações em arquivos de configuração, visão e linguagem para atender às necessidades específicas do seu aplicativo.)
+2 - em AppServiceProvider -> boot adicionar Paginator::useBootstrapFive(); (5 foi a opcao que eu escolhi em php artisan vendor:publish)
+
