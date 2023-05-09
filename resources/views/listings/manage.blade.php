@@ -24,7 +24,7 @@
                             </a>
                         </td>
                         <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
-                            <form action="/listing/{{$listing->id}}" method="POST"> 
+                            <form action="/listings/{{$listing->id}}" method="POST"> 
                                 @csrf
                                 @method('DELETE')
                                 <button class="text-red-600">
