@@ -40,7 +40,14 @@
                         Manager Listings
                     </a>
                 </li>
-
+                <li>
+                    <form action="/logout" method="POST" class="inline">
+                        @csrf
+                        <button type="submit">
+                            <i class="fa-solid fa-door-closed"></i>Logout
+                        </button>
+                    </form>
+                </li>
                 @else
                 <li>
                     <a href="/register" class="hover:text-laravel">
