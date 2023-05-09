@@ -72,6 +72,8 @@
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                 @enderror
             </div>
+
+            <img src="{{$listing->logo ? asset('/storage/'.$listing->logo) : asset('/images/no-image.png')}}" alt="" class="w-48 mr-6 mb-6">
     
             <div class="mb-6">
                 <label for="description" class="inline-block text-lg mb-2">
@@ -85,7 +87,7 @@
     
             <div class="mb-6">
                 <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                    Create Gig
+                    Update Gig
                 </button>
     
                 <a href="/" class="text-black ml-4"> Back </a>

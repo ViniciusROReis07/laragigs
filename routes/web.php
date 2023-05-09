@@ -23,11 +23,25 @@ Route::get('/listings/create', [ListingController::class, 'create']);
 // Store Listing
 Route::post('/listings', [ListingController::class, 'store']);
 
+// Edit Submit to Update
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
+
 // Single Listing
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 // Show Edit Form
 Route::get('/listing/{listing}/edit', [ListingController::class, 'edit']);
+
+
+
+
+
+
+
+
+
+
+
 
 // Route::get('/hello', function(){
 //     return response('<h1>Hello World</h1>', 200)
