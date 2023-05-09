@@ -56,6 +56,6 @@ class ListingController extends Controller
 
     public function edit(Listing $listing)
     {
-        return view('listing.edit', ['listing'=> $listing]);
+        return view('listings.edit', ['listing'=> $listing]);
     }
 }
