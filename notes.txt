@@ -61,3 +61,30 @@ Upload de imagem:
 1 - Em config->filesystem podemos definir aonde o arquivo sera salvo4
 2 - Os arquivos locais e publicos sao salvos na pasta storage
 3 - O comando php artisan storage:link linka os arquivos da pasta storage com a pasta public
+
+Tinker Tinkering:
+
+Tinker é uma ferramenta REPL (Read-Eval-Print-Loop) que permite que você interaja com o código e os dados do seu aplicativo Laravel em uma interface de linha de comando.
+
+Ex:
+Digito:
+\App\Models\Listing::find(3)
+
+Retorna:
+App\Models\Listing {#6597
+    id: 3,
+    user_id: 1,
+    title: "Rem asperiores maiores sit.",
+    logo: null,
+    tags: "Laravel,api,backend",
+    company: "Turner-Ernser",
+    location: "New Danika",
+    email: "djacobs@howell.com",
+    website: "http://stehr.com/molestias-officia-molestiae-odio-nihil-ut-eos.html",
+    description: "Mollitia explicabo a magnam saepe. Dolor quo facilis minima est aliquam ad et eius. Et officia fugiat sapiente sint. Debitis ipsam et sapiente voluptas consectetur dolorem esse. Architecto doloribus sit vero non provident harum.",
+    created_at: "2023-05-09 17:10:48",
+    updated_at: "2023-05-09 17:10:48",
+  }
+
+Ex:
+ $user = \App\Models\User::first() e $user->listings
