@@ -19,13 +19,13 @@ use App\Models\Listing;
 Route::get('/', [ListingController::class, 'index']);
 
 // Show Create form
-Route::get('/listings/create', [ListingController::class, 'create']);
+Route::get('/listings/create', [ListingController::class, 'create'])->middleware("auth");
 
 // Store Listing
-Route::post('/listings', [ListingController::class, 'store']);
+Route::post('/listings', [ListingController::class, 'store'])->middleware("auth");
 
 // Edit Submit to Update
-Route::put('/listings/{listing}', [ListingController::class, 'update']);
+Route::put('/listings/{listing}', [ListingController::class, 'update'])->middleware("auth");
 
 // Delete Submit to Update
 Route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
@@ -43,10 +43,10 @@ Route::get('/register', [UserController::class, 'create']);
 Route::post('/users', [UserController::class, 'store']);
 
 // Log User Out
-Route::post('/logout', [UserController::class,'logout']);
+Route::post('/logout', [UserController::class,'logout'])->middleware("auth");
 
 // Show Login Form
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/login', [UserController::class, 'login'])->name('login');
 
 
 // Log In User
